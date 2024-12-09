@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Hi there! 👋 I'm Olatubora Felix  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🚀 About Me  
+I am a **Seasoned Software Engineer** with over **5+ years of expertise**, specializing in **JavaScript**, **TypeScript**, **React**, **Next.js**, and **Laravel**.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I have a proven track record in developing **secure** and **high-performing SaaS web applications** and **Fintech solutions**, always prioritizing an exceptional **developer experience**.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Passionate about **mentorship**, I enjoy driving projects forward while nurturing junior developers through **knowledge sharing**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 🛠️ Tech Stack & Skills  
+- **Frontend:** React, Next.js, Redux, Redux Toolkit, React Query, HTML5, CSS/SCSS, Tailwind CSS  
+- **Backend:** Laravel,Supabase REST APIs  
+- **UI/UX:** PWA, Mobile-First Designs  
+- **Data Visualization:** Apache eCharts, React Flow, React Diagrams  
+- **SDK Development:** JavaScript SDKs  
+- **Testing:** Jest, React Testing Library, Vitest  
+- **Build & Automation Tools:** Webpack, Vite, GitHub Actions, CI/CD Pipelines  
+- **Collaboration Tools:** Jira, Slack, Microsoft Teams, GitHub  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💡 What I Bring  
+- Expertise in building scalable, user-friendly SaaS and Fintech platforms.  
+- Strong proficiency in **complex data visualization** and **workflow-based solutions**.  
+- Experience with **agile methodologies** in collaborative settings.  
+- A passion for staying up-to-date with modern tech and sharing knowledge with others.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 🤝 Let's Connect!  
+I’m always open to connecting, collaborating, and taking on new challenges. Whether it’s a **freelance**, **remote**, **on-site**, or **contract-based** project, feel free to reach out!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can:  
+- **Follow** me here on GitHub 🌟  
+- **Reach out** for inquiries or job opportunities 💼  
+- Or even just say **Hi**! 😊  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 🌱 Always Exploring  
+While I specialize in the above technologies, I’m eager to dive into other stacks and expand my horizons! 🚀  
+
