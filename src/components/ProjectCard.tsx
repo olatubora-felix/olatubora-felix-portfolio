@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ProjectType } from "@/constants/projects";
 import { FC } from "react";
+import Link from "next/link";
 export const ProjectCard: FC<Props> = ({ project, index }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -17,17 +18,23 @@ export const ProjectCard: FC<Props> = ({ project, index }) => {
       transition={{ duration: 0.8, delay: index * 0.2 }}
       className="bg-gray-800 rounded-lg overflow-hidden shadow-lg"
     >
-      <Image
-        src={project.image}
-        alt={project.title}
-        width={400}
-        height={300}
-        className="w-full h-48 object-cover"
-      />
+      <Link href={project.website} target="_blank">
+        <Image
+          src={project.image}
+          alt={project.title}
+          width={400}
+          height={300}
+          className="w-full h-48 object-cover"
+        />
+      </Link>
       <div className="p-6 md:h-[400px]">
-        <h3 className="text-2xl font-bold mb-2 text-blue-400">
+        <Link
+          href={project.website}
+          target="_blank"
+          className="text-2xl font-bold mb-2 text-blue-400"
+        >
           {project.title}
-        </h3>
+        </Link>
         <div className="mb-4  h-[200px] overflow-y-auto">
           <p className={`text-gray-300  `}>{project.description}</p>
         </div>
