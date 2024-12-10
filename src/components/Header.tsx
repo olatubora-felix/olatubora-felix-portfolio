@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header className="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+    <header className="sticky top-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <Image
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({
             alt="Olawole Felix Olatubora"
             height={40}
             width={40}
-            className="rounded-full"
+            className="rounded-full !h-10 !w-10"
           />
           <motion.span
             className="text-xl font-bold cursor-pointer"
