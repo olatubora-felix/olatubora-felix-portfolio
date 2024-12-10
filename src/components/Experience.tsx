@@ -7,7 +7,7 @@ import { ExperienceItem } from "./ExperienceItem";
 
 const Experience = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="py-20" id="experience">
+    <div ref={ref} className="md:py-20 py-10" id="experience">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

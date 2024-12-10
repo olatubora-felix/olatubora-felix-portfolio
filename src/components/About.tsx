@@ -5,18 +5,18 @@ import { useInView } from "react-intersection-observer";
 import { forwardRef } from "react";
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "JavaScript",
   "HTML5",
   "CSS3",
+  "TypeScript",
+  "JavaScript",
+  "React",
+  "Next.js",
   "Tailwind CSS",
   "Redux",
   "Zustand",
-  "Node.js",
-  "Express",
-  "MongoDB",
+  "PHP",
+  "Laravel",
+  "PostgreSQL",
   "Git",
   "Jest",
 ];
@@ -45,11 +45,11 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg"
           >
-            I am a Senior Software Engineer with 5+ years of experience
-            specializing in JavaScript, TypeScript, React, Next.js, and Node.js.
-            I build secure, scalable SaaS applications and FinTech solutions,
-            excelling in state management, responsive design, and data
-            visualization with tools like Redux, Tailwind CSS, and Apache
+            I am a Senior Software Engineer with 6+ years of experience
+            specializing in JavaScript, TypeScript, React, Next.js, PHP and
+            Laravel. I build secure, scalable SaaS applications and FinTech
+            solutions, excelling in state management, responsive design, and
+            data visualization with tools like Redux, Tailwind CSS, and Apache
             eCharts.
           </motion.p>
           <motion.p

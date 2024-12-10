@@ -7,7 +7,7 @@ import { projects } from "@/constants/projects";
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} className="py-20" id="projects">
+    <div ref={ref} className="md:py-20 py-10" id="projects">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
