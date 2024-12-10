@@ -24,7 +24,7 @@ export const ProjectCard: FC<Props> = ({ project, index }) => {
         height={300}
         className="w-full h-48 object-cover"
       />
-      <div className="p-6 h-[400px]">
+      <div className="p-6 md:h-[400px]">
         <h3 className="text-2xl font-bold mb-2 text-blue-400">
           {project.title}
         </h3>
