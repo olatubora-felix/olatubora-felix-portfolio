@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({
     document.body.removeChild(link);
   };
   return (
-    <header className="sticky top-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+    <header className="sticky top-0 w-full z-40 bg-gray-900 ">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <Image
