@@ -1,56 +1,52 @@
 export const experiences: Exprience[] = [
   {
     title: "Senior Software Engineer",
-    company: "Myvamsnet . Contract",
+    company: "Fresh Market Xchange (FMX) · Contract",
     location: "Lagos, Lagos State, Nigeria",
     period: "Jul 2024 - Present",
-    description: [
-      "Lead the frontend development team in creating cutting-edge web applications using React and Next.js. Implemented state management solutions and optimized performance for high-traffic sites.",
-      "Producing clean, efficient and reusable code based on functional specifications.",
-      "Fix, improve and optimize existing systems.",
-      "Troubleshoot, debug and upgrade existing software.",
-      "Integrate software components to third-party systems, or libraries.",
-      "Develop and implement new software programs.",
-      "Test and deploy patches and updates.",
-      "Recommend and execute improvements.",
-      "Create technical documentation for reference and reporting.",
-      "Design Normalized Database and Application.",
-    ],
-  },
-  {
-    title: "Senior Frontend Developer(React & Nextjs)",
-    company: "Fresh Market Xchange · Contract",
-    location: "Melbourne, Victoria, Australia",
-    period: "Oct 2023 - Nov 2024",
+    logo: "/fmx-logo.webp",
     description: [
       "Managed and led a team of three frontend developers, driving the successful delivery of high-quality projects from initial concept to final deployment.",
-      "Developed important features for internal teams which increased their productivity by about 25%.",
-      "Worked with product & design teams to build & maintain features on various internal & external dashboards.",
+      "Developed key features for internal teams, increasing their productivity by approximately 25%.",
+      "Mentored junior developers, fostering professional growth and enhancing overall team productivity.",
+      "Collaborated with product and design teams to build and maintain features for various internal and external dashboards.",
       "Worked with QA Engineers to ensure new features/pages are tested and approved within 72 hours.",
-      "Developed standard reports for all projects to make it easier for future developers.",
-      "Developed & updated frontend functionalities across the web app.",
-      "Performed REST API testing.",
-      "Developed competencies in backend tasks such as creating & consuming APIs and querying MongoDB & SQL databases.",
+      "Migrated client’s existing React app to Next.js, leveraging server actions, server components, and serverless APIs, resulting in 56% performance improvement.",
+      "Developed standard reports for all projects, making it easier for future developers to understand and build upon codebase.",
+      "Enhanced and updated frontend functionalities across the web app.",
       "Delivered a responsive and high-performance interface tailored to wholesale market needs.",
-      "Integrated multilingual support (Japanese and English) for enhanced accessibility.",
-      "Collaborated with backend teams to align on scalable APIs and security protocols.",
-      "Ensured compliance with Japan's stringent data protection regulations by leveraging AWS-based solutions.",
+      "Integrated multilingual support (Japanese and English) to improve accessibility.",
+      "Implemented OCR technology to streamline order processing and automate invoice generation.",
     ],
   },
+
   {
     title: "Senior Software Engineer",
     company: "Stellas Bank . Hybrid",
     location: "Lagos, Lagos State, Nigeria",
-    period: "Sep 2022 - Oct 2024",
+    period: "Aug 2022 - Oct 2024",
+    logo: "/stellas-logo.svg",
     description: [
       "Operating in an Agile and Scrum-oriented work environment, utilizing tools like Git, Jira, Slack, Microsoft Teams and other tools.",
-      "Managing the Stellas Bank Frontend and Interstellas Frontend, making use of a diverse set of tools such as Typescript, Javascript, Reactjs, Nextjs, Redux, React Query, Cypress, Eslint, Prettier, and various additional packages.",
+      "Managed the Stellas Bank Frontend and Interstellas Frontend, making use of a diverse set of tools such as Typescript, Javascript, Reactjs, Nextjs, Redux, React Query, Cypress, Eslint, Prettier, and various additional packages.",
       "Collaborating with Back-end developers and Product Designers to improve usability.",
       "Getting feedback from, and building solutions for, users and customers.",
       "Fixing web app issues or bugs that arise.",
       "Adding features to the Stellas Frontend and Interstellas Frontend web applications.",
       "Adding custom features with proper unit tests.",
       "Performing pair programming with other colleagues.",
+      "Collaborated with the Customer Support team to resolve customer issues effectively.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company: "The GIG Group · Full-time",
+    location: "Lagos, Lagos State, Nigeria",
+    period: "Mar 2022 - Aug 2022",
+    logo: "/the_gig_group_logo.jpeg",
+    description: [
+      "Designed and delivered scalable digital solutions to support logistics operations, focusing on user-friendly interfaces and seamless functionality.",
+      "Initially joined The GIG Group to enhance its logistics operations through innovative digital solutions and later transitioned to Stellas Bank, a subsidiary, to drive technology initiatives within the financial services sector.",
     ],
   },
   {
@@ -58,6 +54,7 @@ export const experiences: Exprience[] = [
     company: "Mobinet Group · Remote",
     location: "Hong Kong",
     period: "Aug 2021 - Oct 2022",
+    logo: "/mobinet-logo.jpeg",
     description: [
       "Working with clients to develop the overall look and design of a web app.",
       "Building web app using programming languages such as HTML, CSS, JavaScript, React.js, and Laravel (API).",
@@ -73,6 +70,7 @@ export const experiences: Exprience[] = [
     company: "Gheli Technology Solution limited · Full-time",
     location: "Benin-City, Edo, Nigeria",
     period: "Apr 2020 - May 2021",
+    logo: "",
     description: [
       "Supported schools during the COVID-19 pandemic by developing robust online solutions to facilitate remote learning.",
       "Built a Computer-Based Test (CBT) platform and an online classroom system using PHP and Laravel.",
@@ -89,6 +87,7 @@ export const experiences: Exprience[] = [
       "Ministry of innovation, science and technology osogbo Osun State · Full-time",
     location: "Oshogbo, Osun, Nigeria",
     period: "Nov 2019 - Oct 2020",
+    logo: "",
     description: [
       "Assisted the Osun State Government in building a web application to track patients in isolation centers and provide real-time COVID-19 statistics.",
       "Developed a web application for the Ministry of Innovation, Science, and Technology, Osogbo, Osun State, to create COVID-19 awareness campaigns.",
@@ -102,6 +101,7 @@ export const experiences: Exprience[] = [
     company: "Digital Crystal Solution Technology · Part-time",
     location: "Benin-City, Edo, Nigeria",
     period: "Jun 2018 - Aug 2019",
+    logo: "",
     description: [
       "Ensuring web design is optimized for smartphones.",
       "Building reusable code for using PHP",
@@ -117,4 +117,5 @@ export interface Exprience {
   location: string;
   period: string;
   description: string[];
+  logo: string;
 }

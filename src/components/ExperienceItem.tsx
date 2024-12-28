@@ -2,6 +2,7 @@ import React, { FC, useRef } from "react";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Exprience } from "@/constants/exprience";
+import Image from "next/image";
 
 export const ExperienceItem: FC<Props> = ({ experience, index }) => {
   const itemRef = useRef(null);
@@ -23,9 +24,21 @@ export const ExperienceItem: FC<Props> = ({ experience, index }) => {
     >
       <div className="order-1 md:w-5/12"></div>
       <div className="z-20">
-        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 shadow-xl border-4 border-white">
-          <div className="w-3 h-3 rounded-full bg-white"></div>
-        </div>
+        {experience.logo ? (
+          <div className="bg-white w-8 h-8 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+            <Image
+              src={experience.logo}
+              alt={experience.company}
+              width={32}
+              height={32}
+              className="w-8 h-8 rounded-full"
+            />
+          </div>
+        ) : (
+          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 shadow-xl border-4 border-white">
+            <div className="w-3 h-3 rounded-full bg-white"></div>
+          </div>
+        )}
       </div>
       <motion.div
         className="order-1 bg-gray-800 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4"

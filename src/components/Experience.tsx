@@ -17,7 +17,7 @@ const Experience = forwardRef<HTMLDivElement>((props, ref) => {
         >
           Work Experience
         </motion.h2>
-        <div className="relative">
+        <div className="relative px-2">
           {/* Vertical line - hidden on mobile, visible on larger screens */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-500 hidden md:block" />
 

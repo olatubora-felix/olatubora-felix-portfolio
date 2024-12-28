@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { X, AlignJustify, FileUser } from "lucide-react";
+import Link from "next/link";
 
 interface HeaderProps {
   onAboutClick: () => void;
@@ -44,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({
             Olawole Olatubora
           </motion.span>
         </div>
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 items-center">
           {[
             { name: "About", onClick: onAboutClick },
             { name: "Experience", onClick: onExperienceClick },
@@ -61,24 +63,27 @@ const Header: React.FC<HeaderProps> = ({
               {item.name}
             </motion.span>
           ))}
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-base transition-colors "
+          >
+            <Link
+              href={"/felix-olawole-olatubora.pdf"}
+              download={true}
+              target="_blank"
+              className="flex items-center gap-2"
+            >
+              <FileUser /> Resume
+            </Link>
+          </motion.button>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+          {isOpen ? (
+            <X onClick={() => setIsOpen(!isOpen)} size={24} />
+          ) : (
+            <AlignJustify onClick={() => setIsOpen(!isOpen)} size={24} />
+          )}
         </div>
       </nav>
       {isOpen && (
@@ -86,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-gray-800 py-2"
+          className="md:hidden bg-gray-800 py-4 grid gap-4"
         >
           {[
             { name: "About", onClick: onAboutClick },
@@ -104,6 +109,15 @@ const Header: React.FC<HeaderProps> = ({
               {item.name}
             </motion.div>
           ))}
+          <div className="px-6 py-2">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-base transition-colors flex items-center gap-2 w-full justify-center"
+            >
+              <FileUser /> Resume
+            </motion.button>
+          </div>
         </motion.div>
       )}
     </header>

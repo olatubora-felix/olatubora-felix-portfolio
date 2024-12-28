@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Olawole Felix Olatubora | Senior Frontend Developer",
   description:
-    "Portfolio of Olawole Felix Olatubora, a senior frontend developer specializing in React, Next.js, and modern web technologies.",
+    "Olawole Felix Olatubora, a senior frontend developer specializing in React, Next.js, and modern web technologies.",
 };
 
 export default function RootLayout({
