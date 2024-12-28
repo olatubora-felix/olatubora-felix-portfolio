@@ -26,6 +26,16 @@ const Header: React.FC<HeaderProps> = ({
     callback();
   };
 
+  const handleDownload = () => {
+    const pdfFileName = "felix-olawole-olatubora.pdf"; // Replace with your PDF file name
+    const fileUrl = `/felix-olawole-olatubora.pdf`;
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = pdfFileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <header className="sticky top-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -113,6 +123,7 @@ const Header: React.FC<HeaderProps> = ({
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleDownload}
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-base transition-colors flex items-center gap-2 w-full justify-center"
             >
               <FileUser /> Resume
