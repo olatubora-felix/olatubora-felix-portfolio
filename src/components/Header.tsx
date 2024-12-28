@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { X, AlignJustify, FileUser } from "lucide-react";
-import Link from "next/link";
 
 interface HeaderProps {
   onAboutClick: () => void;
@@ -76,16 +75,10 @@ const Header: React.FC<HeaderProps> = ({
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-base transition-colors "
+            onClick={handleDownload}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-base transition-colors flex items-center gap-2"
           >
-            <Link
-              href={"/felix-olawole-olatubora.pdf"}
-              download={true}
-              target="_blank"
-              className="flex items-center gap-2"
-            >
-              <FileUser /> Resume
-            </Link>
+            <FileUser /> Resume
           </motion.button>
         </div>
         <div className="md:hidden">
