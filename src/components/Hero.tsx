@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { SocialComp } from "./SocialComp";
+import { BorderBeam } from "./ui/border-beam";
+import { RainbowButton } from "./ui/rainbow-button";
 
 const Hero = () => {
   return (
@@ -13,14 +15,17 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         className="text-center space-y-3"
       >
-        <div className="flex justify-center items-center ">
-          <Image
-            src={"/logo.jpg"}
-            alt="Olawole Felix Olatubora"
-            width={200}
-            height={200}
-            className="rounded-full"
-          />
+        <div className="flex justify-center items-center">
+          <div className=" h-[200px] w-[200px] rounded-full overflow-hidden relative">
+            <Image
+              src={"/logo.jpg"}
+              alt="Olawole Felix Olatubora"
+              width={200}
+              height={200}
+              className="rounded-full"
+            />
+            <BorderBeam />
+          </div>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Olawole Felix Olatubora
@@ -32,21 +37,19 @@ const Hero = () => {
           <SocialComp />
         </div>
         <p className="text-xl mb-12 max-w-2xl mx-auto">
-          Crafting exceptional web experiences with React, Next.js, and
+          Crafting exceptional web experiences with React, Next.js, Laravel and
           cutting-edge technologies.
         </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
+        <RainbowButton
           onClick={() => {
             document
               .getElementById("projects")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
+          className="!bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
         >
           View My Work
-        </motion.button>
+        </RainbowButton>
       </motion.div>
     </div>
   );

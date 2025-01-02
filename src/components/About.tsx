@@ -46,7 +46,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             className="text-lg"
           >
             I am a Senior Software Engineer with 6+ years of experience
-            specializing in JavaScript, TypeScript, React, Next.js, PHP and
+            specializing in JavaScript, TypeScript, React, Next.js, PHP, and
             Laravel. I build secure, scalable SaaS applications and FinTech
             solutions, excelling in state management, responsive design, and
             data visualization with tools like Redux, Tailwind CSS, and Apache
@@ -58,11 +58,32 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg"
           >
-            I bring expertise in PWAs, JavaScript SDKs, and testing frameworks
-            like Jest and Vitest, while leveraging modern tools like Webpack,
-            Vite, and CI/CD pipelines. Passionate about mentoring, I thrive in
-            agile teams, collaborating through Jira, Slack, and GitHub. Open to
-            freelance, remote, or contract roles—let’s connect! 😊
+            I bring deep expertise in Laravel, crafting RESTful APIs,
+            integrating third-party services, and implementing robust
+            authentication systems with Laravel Sanctum and Passport. Skilled in
+            optimizing Eloquent ORM and database queries, I ensure high
+            performance and maintainability in my applications.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg"
+          >
+            A dedicated mentor, I am passionate about empowering junior
+            developers through code reviews, technical guidance, and structured
+            learning paths. I also specialize in PWAs, JavaScript SDKs, and
+            testing frameworks like Jest and Vitest while leveraging modern
+            tools like Webpack, Vite, and CI/CD pipelines. Thriving in agile
+            teams, I collaborate seamlessly through Jira, Slack, and GitHub.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg"
+          >
+            Open to freelance, remote, or contract roles—let’s connect! 😊
           </motion.p>
 
           <section className="py-4">
