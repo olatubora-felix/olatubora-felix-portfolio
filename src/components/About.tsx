@@ -56,7 +56,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg"
+            className="text-lg md:text-start"
           >
             I bring deep expertise in Laravel, crafting RESTful APIs,
             integrating third-party services, and implementing robust
