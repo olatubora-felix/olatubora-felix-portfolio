@@ -2,7 +2,7 @@ export const experiences: Exprience[] = [
   {
     title: "Senior Software Engineer",
     company: "Fresh Market Xchange (FMX) · Contract",
-    location: "Lagos, Lagos State, Nigeria",
+    location: "Melbourne, Victoria, Australia",
     period: "Jul 2024 - Present",
     logo: "/fmx-logo.webp",
     description: [
