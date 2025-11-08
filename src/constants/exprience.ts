@@ -18,7 +18,7 @@ export const experiences: Exprience[] = [
     title: "Senior Software Engineer",
     company: "Fresh Market Xchange (FMX) · Contract",
     location: "Melbourne, Victoria, Australia",
-    period: "Jul 2024 - Jan 2025",
+    period: "Jul 2024 - Present",
     logo: "/fmx-logo.webp",
     description: [
       "Managed and led a team of three frontend developers, driving the successful delivery of high-quality projects from initial concept to final deployment.",
