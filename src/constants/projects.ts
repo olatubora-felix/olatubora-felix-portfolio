@@ -12,6 +12,7 @@ export const projects: ProjectType[] = [
       "Zustand",
       "Zod",
       "Hook Form",
+      
     ],
     website: "https://www.midepremiumltd.com/",
   },
