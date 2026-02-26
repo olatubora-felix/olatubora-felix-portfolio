@@ -1,9 +1,23 @@
 export const experiences: Exprience[] = [
   {
     title: "Senior Software Engineer",
-    company: "Myvamsnet Limited · Contract",
+    company: "Afrinvest (West Africa) Limited · Full-time",
     location: "Lagos, Lagos State, Nigeria",
     period: "Jan 2025 - Present",
+    logo: "/afrinvest_west_africa_logo.jpeg",
+    description: [
+      "Successfully delivered application development for Afrinvestor, the official digital investment platform of Afrinvest, serving 7,000+ active users across mobile and web platforms, maintaining 99.9% uptime and high transaction reliability.",
+      "Played a key role in the development and enhancement of the FNG Bond product, improving transaction processing speed by 35% and reducing user-reported issues by 20%.",
+      "Implemented advanced caching mechanisms using server components, reducing API calls by 40% and improving average page load time from 3.2s to 1.8s.",
+      "Applied optimistic UI update strategies, decreasing perceived user wait time by over 50% and improving task completion rates by 25%.",
+      "Designed and launched a non-intrusive in-app feedback system, achieving a 45% response rate and enabling data-driven product improvements based on structured user satisfaction metrics.",
+    ],
+  },
+  {
+    title: "Senior Software Engineer",
+    company: "Myvamsnet Limited · Contract",
+    location: "Lagos, Lagos State, Nigeria",
+    period: "Jan 2025 - Dec 2025",
     logo: "/myvamsnet.svg",
     description: [
       "Lead the design of scalable systems, APIs, and backend services using NestJS, PostgreSQL, and Supabase.",
