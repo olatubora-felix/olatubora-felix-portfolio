@@ -1,19 +1,19 @@
 export const experiences: Exprience[] = [
-  // {
-  //   title: "Senior Software Engineer",
-  //   company: "Myvamsnet Limited · Contract",
-  //   location: "Lagos, Lagos State, Nigeria",
-  //   period: "Jan 2025 - Present",
-  //   logo: "/myvamsnet.svg",
-  //   description: [
-  //     "Lead the design of scalable systems, APIs, and backend services using NestJS, PostgreSQL, and Supabase.",
-  //     "Build and maintain robust applications using Next.js, React Native, and Expo.",
-  //     "Manage and mentor a cross-functional team of 5 engineers, conducting code reviews, onboarding, and continuous skill development.",
-  //     "Oversee deployment workflows with AWS, Vercel, and Supabase Edge Functions.",
-  //     "Developed standard reports for all projects, making it easier for future developers to understand and build upon codebase.",
-  //     "Work closely with stakeholders to translate product ideas into technical solutions and iterative releases.",
-  //   ],
-  // },
+  {
+    title: "Senior Software Engineer",
+    company: "Myvamsnet Limited · Contract",
+    location: "Lagos, Lagos State, Nigeria",
+    period: "Jan 2025 - Present",
+    logo: "/myvamsnet.svg",
+    description: [
+      "Lead the design of scalable systems, APIs, and backend services using NestJS, PostgreSQL, and Supabase.",
+      "Build and maintain robust applications using Next.js, React Native, and Expo.",
+      "Manage and mentor a cross-functional team of 5 engineers, conducting code reviews, onboarding, and continuous skill development.",
+      "Oversee deployment workflows with AWS, Vercel, and Supabase Edge Functions.",
+      "Developed standard reports for all projects, making it easier for future developers to understand and build upon codebase.",
+      "Work closely with stakeholders to translate product ideas into technical solutions and iterative releases.",
+    ],
+  },
   {
     title: "Senior Software Engineer",
     company: "Fresh Market Xchange (FMX) · Contract",
