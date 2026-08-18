@@ -106,8 +106,8 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             I work primarily with NestJS, Laravel, and Next.js, backed by strong
             PostgreSQL and distributed-systems fundamentals. I design database
             schemas and event-driven, queue-based services, build secure
-            authentication and authorization flows, and own deployment
-            workflows end to end through CI/CD and cloud infrastructure.
+            authentication and authorization flows, and own deployment workflows
+            end to end through CI/CD and cloud infrastructure.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
