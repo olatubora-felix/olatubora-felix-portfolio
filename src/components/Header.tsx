@@ -26,8 +26,8 @@ const Header: React.FC<HeaderProps> = ({
   };
 
   const handleDownload = () => {
-    const pdfFileName = "felix-olawole-olatubora.pdf"; // Replace with your PDF file name
-    const fileUrl = `/felix-olawole-olatubora.pdf`;
+    const pdfFileName = "Felix_Olawole_Olatubora_Resume.pdf"; // Replace with your PDF file name
+    const fileUrl = `/Felix_Olawole_Olatubora_Resume.pdf`; // Replace with the actual path to your PDF file in the public folder
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = pdfFileName;

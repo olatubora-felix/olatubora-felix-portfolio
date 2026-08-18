@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Olawole Felix Olatubora | Senior Frontend Developer",
+  title: "Olawole Felix Olatubora | Senior Software Engineer",
   description:
-    "Olawole Felix Olatubora, a senior frontend developer specializing in React, Next.js, and modern web technologies.",
+    "Olawole Felix Olatubora, a Senior Software Engineer with 7+ years across fintech, healthtech, logistics, and e-commerce, specializing in backend architecture and system design with NestJS, Laravel, Next.js, and PostgreSQL.",
 };
 
 export default function RootLayout({

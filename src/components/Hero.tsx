@@ -31,14 +31,15 @@ const Hero = () => {
           Olawole Felix Olatubora
         </h1>
         <h2 className="text-2xl md:text-4xl text-gray-400 mb-8">
-          Senior Frontend Developer
+          Senior Software Engineer
         </h2>
         <div className="flex justify-center items-center gap-4 py-2">
           <SocialComp />
         </div>
         <p className="text-xl mb-12 max-w-2xl mx-auto">
-          Crafting exceptional web experiences with React, Next.js, Laravel and
-          cutting-edge technologies.
+          Backend architecture and system design for fintech — microservices,
+          multi-tenant platforms, and financial data integrity with NestJS,
+          Laravel, and Next.js.
         </p>
         <RainbowButton
           onClick={() => {

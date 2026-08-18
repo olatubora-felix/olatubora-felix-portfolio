@@ -4,21 +4,66 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { forwardRef } from "react";
 
-const skills = [
-  "HTML5",
-  "CSS3",
-  "TypeScript",
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Redux",
-  "Zustand",
-  "PHP",
-  "Laravel",
-  "PostgreSQL",
-  "Git",
-  "Jest",
+const skillGroups = [
+  {
+    category: "Backend & Architecture",
+    items: [
+      "NestJS",
+      "Node.js/Express",
+      "Laravel/PHP",
+      "Microservices",
+      "Platform federation",
+      "Multi-tenant (schema-per-tenant) SaaS",
+      "Event-driven & queue-based systems",
+      "BullMQ",
+      "Redis",
+    ],
+  },
+  {
+    category: "Frontend & Mobile",
+    items: [
+      "React",
+      "Next.js",
+      "React Native/Expo",
+      "TypeScript",
+      "TailwindCSS",
+      "Redux",
+      "React Query",
+    ],
+  },
+  {
+    category: "Data & Infrastructure",
+    items: [
+      "PostgreSQL (incl. PostGIS)",
+      "Drizzle ORM",
+      "AWS",
+      "Vercel",
+      "Supabase",
+      "Hetzner/Coolify",
+      "CI/CD",
+      "Docker",
+    ],
+  },
+  {
+    category: "Domain Expertise",
+    items: [
+      "KYC/AML architecture",
+      "Financial transaction integrity",
+      "Double-entry ledger/wallet systems",
+      "Real-time systems (WebSockets/Socket.io)",
+    ],
+  },
+  {
+    category: "Practices",
+    items: [
+      "Agile/Scrum",
+      "Code review",
+      "Technical mentorship",
+      "API design",
+      "Git",
+      "Jira",
+    ],
+  },
 ];
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
@@ -45,12 +90,12 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg"
           >
-            I am a Senior Software Engineer with 6+ years of experience
-            specializing in JavaScript, TypeScript, React, Next.js, PHP, and
-            Laravel. I build secure, scalable SaaS applications and FinTech
-            solutions, excelling in state management, responsive design, and
-            data visualization with tools like Redux, Tailwind CSS, and Apache
-            eCharts.
+            I am a Senior Software Engineer with 7+ years across fintech,
+            healthtech, logistics, and e-commerce, currently building core
+            wealth-management infrastructure at Afrinvest (West Africa) Limited.
+            I specialize in backend architecture and system design —
+            microservices, multi-tenant platforms, KYC/AML flows, and financial
+            data integrity.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -58,11 +103,11 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-start"
           >
-            I bring deep expertise in Laravel, crafting RESTful APIs,
-            integrating third-party services, and implementing robust
-            authentication systems with Laravel Sanctum and Passport. Skilled in
-            optimizing Eloquent ORM and database queries, I ensure high
-            performance and maintainability in my applications.
+            I work primarily with NestJS, Laravel, and Next.js, backed by strong
+            PostgreSQL and distributed-systems fundamentals. I design database
+            schemas and event-driven, queue-based services, build secure
+            authentication and authorization flows, and own deployment
+            workflows end to end through CI/CD and cloud infrastructure.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -70,12 +115,12 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg"
           >
-            A dedicated mentor, I am passionate about empowering junior
-            developers through code reviews, technical guidance, and structured
-            learning paths. I also specialize in PWAs, JavaScript SDKs, and
-            testing frameworks like Jest and Vitest while leveraging modern
-            tools like Webpack, Vite, and CI/CD pipelines. Thriving in agile
-            teams, I collaborate seamlessly through Jira, Slack, and GitHub.
+            My track record is measurable: 35% faster transaction processing,
+            40% fewer API calls, and a 56% performance gain from a full
+            framework migration. I have led and mentored engineering teams
+            through code reviews, technical guidance, and structured learning
+            paths, and I am currently deepening my expertise in Java/Spring Boot
+            and data engineering/cloud infrastructure.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -93,27 +138,31 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-3xl font-bold mb-6"
             >
-              Skills & Technologies
+              Core Skills
             </motion.h3>
-            <div ref={inViewRef}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : {}}
-                transition={{ duration: 0.8 }}
-                className="grid grid-cols-2 md:grid-cols-3 gap-4"
-              >
-                {skills.map((skill, index) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-gray-800 rounded-lg p-4 text-center"
-                  >
-                    {skill}
-                  </motion.div>
-                ))}
-              </motion.div>
+            <div ref={inViewRef} className="space-y-6">
+              {skillGroups.map((group, groupIndex) => (
+                <motion.div
+                  key={group.category}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: groupIndex * 0.15 }}
+                >
+                  <h4 className="text-xl font-semibold mb-3 text-gray-300">
+                    {group.category}
+                  </h4>
+                  <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                    {group.items.map((skill) => (
+                      <span
+                        key={skill}
+                        className="bg-gray-800 rounded-lg px-4 py-2 text-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </section>
         </div>
